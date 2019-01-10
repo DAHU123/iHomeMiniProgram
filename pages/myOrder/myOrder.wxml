@@ -1,0 +1,96 @@
+<!--sureOrder.wxml-->
+<view class="me_person">
+    <image src="{{goBack}}" class="me_goBack" bindtap="goBack"></image>
+    <text>我的订单</text>
+    <image src="{{threeInfo}}" class="me_threeInfo" bindtap="showBlack"></image>
+</view>
+<view class="me_mask" hidden="{{hiddenMask}}" bindtap="hideBlack"></view>
+<view class="me_black" hidden="{{hiddenBlack}}">
+    <view class="me_yiHang">
+        <image src="{{car}}"></image>
+        <text>购物车</text>
+    </view>
+    <view class="me_yiHang">
+        <image src="{{people}}"></image>
+        <text>个人中心</text>
+    </view>
+</view>
+<view style="padding-top: 120rpx;"></view>
+<view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'me_active':''}}" data-current="0" bindtap="clickTab">全部订单</view>
+    <view class="swiper-tab-item {{currentTab==1?'me_active':''}}" data-current="1" bindtap="clickTab">待支付</view>
+    <view class="swiper-tab-item {{currentTab==2?'me_active':''}}" data-current="2" bindtap="clickTab">待收货</view>
+    <view class="swiper-tab-item {{currentTab==3?'me_active':''}}" data-current="3" bindtap="clickTab">已完成</view>
+</view>
+<swiper current="{{currentTab}}" duration="300"  bindchange="swiperTab" style="height:{{swiperHeight}}rpx;">
+    <swiper-item style="overflow:auto;">
+        <view wx:for="{{OrderData}}">
+            <!--全部订单-->
+            <view class="me_shopTitle">
+                <text>{{item.number}}</text>
+                <image src="{{goTo}}" class="me_goTo"></image>
+                <view wx:if="{{item.status == 1}}">未支付</view>
+                <view wx:if="{{item.status == 2}}">待发货</view>
+                <view wx:if="{{item.status == 3}}">已发货</view>
+                <view wx:if="{{item.status == 7}}">已完成</view>
+                <view wx:if="{{item.status == 8}}">未付款取消</view>
+            </view>
+            <view class="me_javaImg">
+                <view>
+                    <image src="{{item.mainImgs}}" class="me_goodsImg"></image>
+                </view>
+            </view>
+            <view style="clear: both;"></view>
+            <view class="me_goodsCount">
+                <view>
+                    <text>共1件商品</text>
+                    <text>￥{{item.totalPrice}}</text>
+                </view>
+            </view>
+            <view class="me_cancel">
+                <view wx:if="{{item.status == 1}}">取消订单</view>
+                <!-- <view wx:if="{{item.status == 1}}">去支付</view> -->
+                <view wx:if="{{item.status == 3}}">确认收货</view>
+                <!-- <view wx:if="{{item.status == 2}}">未支付</view>
+                <view wx:if="{{item.status == 2}}">待发货</view>
+                <view wx:if="{{item.status == 3}}">已发货</view>
+                <view wx:if="{{item.status == 7}}">已完成</view>
+                <view wx:if="{{item.status == 8}}">未付款取消</view> -->
+            </view>
+        </view>
+        <view>
+            <!--全部订单-->
+            <view class="me_shopTitle">
+                <text>美肤宝化妆品专卖</text>
+                <image src="{{goTo}}" class="me_goTo"></image>
+                <view>未支付</view>
+            </view>
+            <view class="me_javaImg">
+                <view>
+                    <image src="{{goodsImg}}" class="me_goodsImg"></image>
+                    <image src="{{goodsImg}}" class="me_goodsImg"></image>
+                    <image src="{{goodsImg}}" class="me_goodsImg"></image>
+                    <image src="{{goodsImg}}" class="me_goodsImg"></image>
+                    <image src="{{goodsImg}}" class="me_goodsImg"></image>
+                    <image src="{{goodsImg}}" class="me_goodsImg"></image>
+                </view>
+            </view>
+            <view style="clear: both;"></view>
+            <view class="me_goodsCount">
+                <view>
+                    <text>共5件商品</text>
+                    <text>￥789.65</text>
+                </view>
+            </view>
+            <view class="me_cancel">
+                <view>取消订单</view>
+                <view>去支付</view>
+            </view>
+
+        </view>
+       
+    </swiper-item>
+    <swiper-item><view>待支付</view></swiper-item>
+    <swiper-item><view>待收货</view></swiper-item>
+    <swiper-item><view>已完成</view></swiper-item>
+</swiper>

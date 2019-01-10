@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class="containerCar">
+  <view class="me_person">
+    <image src="{{goBack}}" class="me_goBack" bindtap="goBack"></image>
+    <text>个人信息</text>
+    <image src="{{threeInfo}}" class="me_threeInfo"></image>
+  </view>
+  <view class="setShop">
+  </view>
+  <view class='topHandle'>
+      <view class='shopLiCar'>
+         <view class='ChoiceCheck'>  
+            <image src='http://ihome-img-dev.oss-cn-beijing.aliyuncs.com/%E5%85%A8%E9%80%89@2x.png'></image>
+         </view>
+         <view class='shopImg'>
+           <image src='http://ihome-img-dev.oss-cn-beijing.aliyuncs.com/saturn/PSDbPNpzsM.jpg'></image>
+         </view>
+         <view  class="ShopName">
+         荣耀MagicBook 14英寸轻薄窄边框笔记本电脑（i7-8550U 8G 256G MX150 2G独显 FHD IPS 正版Office）冰河银
+         </view>
+         <view class="Shopspec">
+             颜色：红色；内存：16G
+         </view>
+         <view class="amount">
+            <text>-</text> <input type='text' value='1'></input><text>+</text>
+         </view>
+      </view>
+  </view>
+  <view class='bottom'>
+    <view class='allCheck'>
+        <image src='http://ihome-img-dev.oss-cn-beijing.aliyuncs.com/%E5%85%A8%E9%80%89@2x.png'></image>
+    </view>
+    <view class='price'>
+      <text style='font-size:24rpx;color:#323232;'>合计：</text><text style='font-size:24rpx;color:#fd461c;'>￥</text><text style='color:#fe461c;'>2999.00</text> 
+    </view>
+    <view class='bottomRight'>
+          去结算(2）
+    </view>
+  </view>
+  
+</view>

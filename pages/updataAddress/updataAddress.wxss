@@ -1,0 +1,97 @@
+/**sureOrder.wxss**/
+.ipt{
+  width: 710rpx;
+  height: 80rpx;
+  padding: 0 20rpx;
+  font-size: 26rpx;
+  color: #323232;
+  background-color: #fff;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #ededed;
+}
+.ipt text{
+  width: 150rpx;
+  height: 80rpx;
+  float: left;
+  display: inline-block;
+}
+.ipt input{
+  width: 560rpx;
+  height: 80rpx;
+  float: left;
+  display: inline-block;
+}
+.ipt textarea{
+  width: 560rpx;
+  height: 150rpx;
+  line-height: 80rpx;
+  color: #323232;
+  float: left;
+  font-size: 26rpx;
+  display: inline-block;
+}
+.tui-picker-content{
+  height: 80rpx;
+  text-align: right;
+}
+.tui-picker-name{
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.tui-picker-detail{
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #fff;
+  font-size: 26rpx;
+  overflow: hidden;
+}
+.tui-picker-detail text{
+   width: 500rpx;
+   display: inline-block;
+}
+.tui-picker-detail image{
+  width: 15rpx;
+  height: 25rpx;
+  float: right;
+  margin-top: 28rpx;
+}
+.select{
+  width: 710rpx;
+  padding: 0 20rpx;
+  height: 70rpx;
+  border-bottom: 1px solid #ebebeb;
+  background-color: #fff;
+}
+.select view{
+  width: 50%;
+  float: left;
+  display: inline-block;
+  color: #999999;
+
+}
+.Setting image{
+  width: 25rpx;
+  height: 25rpx;
+  float: left;
+  margin-top: 22.5rpx;
+}
+.Setting text{
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 22rpx;
+  float: left;
+  display: inline-block;
+  margin-left: 20rpx;
+}
+.buttom{
+  height: 80rpx;
+  width: 710rpx;
+  text-align: center;
+  color: #ffffff;
+  font-size: 28rpx;
+  border-radius: 5rpx;
+  line-height: 80rpx;
+  margin: 0 auto;
+  background-color: #ff6128;
+  margin-top: 20rpx;
+}

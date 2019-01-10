@@ -1,0 +1,222 @@
+/**sureOrder.wxss**/
+.me_person{
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1rpx solid #f2f2f2;
+    background: #fff;
+    height: 80rpx;
+    padding: 20rpx;
+    width: calc(100% - 40rpx);
+    position: fixed;
+    left: 0;
+    top: 0;
+
+}
+.me_person text{
+    font-size: 30rpx;
+    color: #9a9a9a;
+}
+.me_goBack{
+    width: 15rpx;
+    height: 28rpx;
+    transform:rotateY(180deg);
+}
+.me_threeInfo{
+    width: 34rpx;
+    height: 28rpx;
+}
+
+.me_orderStatus{
+    height: 100rpx;
+    padding-left: 20rpx;
+    line-height: 100rpx;
+    font-size: 28rpx;
+    color: #fff;
+    background: #fe6028;
+}
+.me_checkAll{
+    width: 28rpx;
+    height: 28rpx;
+    margin-right: 20rpx;
+}
+.me_infoAdd{
+    width: 22rpx;
+    height: 28rpx;
+    margin-right: 20rpx;
+}
+.me_express{
+    height: 80rpx;
+    background: #fff;
+    border-bottom: 1rpx solid #f2f2f2;
+    margin-bottom: 20rpx;
+    font-size: 26rpx;
+    color: #323232;
+    padding: 0 20rpx;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.me_express text:nth-child(2){
+    color: #999;
+}
+.me_address{
+    background: #fff;
+    padding: 20rpx;
+    border-bottom: 1rpx solid #f2f2f2;
+    margin-bottom: 20rpx;
+}
+.me_first{
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15rpx;
+    font-size: 26rpx;
+    color: #323232;
+}
+.me_first text:nth-child(2){
+    margin-right: 70rpx;
+}
+.me_left{
+    display: block;
+    margin-left: 42rpx;
+    font-size: 24rpx;
+    line-height: 34rpx;
+    color: #999;
+}
+.me_goods{
+    background: #fff;
+    color: #323232;
+    font-size: 24rpx;
+    line-height: 80rpx;
+    padding: 0 0 0 20rpx;
+}
+.me_goodsList{
+    background: #fafafa;
+    padding: 0 0 0 20rpx;
+}
+.me_inner_goods{
+    padding:20rpx 0 20rpx 0;
+    border-bottom: 1rpx solid #e6e6e6;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.me_goodsImg{
+    width: 140rpx;
+    height: 140rpx;
+    margin-right: 20rpx;
+}
+.me_view_column{
+    width: calc(100% - 180rpx);
+    /*padding-right: 20rpx;*/
+}
+.me_view_column text{
+    display: block;
+}
+.me_goodsName{
+    font-size: 24rpx;
+    color: #323232;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+}
+.me_sku{
+    font-size: 20rpx;
+    color: #ccc;
+    padding: 10rpx 0 10rpx 0;
+}
+.me_price{
+    font-size: 22rpx;
+    color: #999;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.me_goodsList .me_inner_goods:last-child{
+    border: 0;
+}
+.me_fontSize{
+    font-size: 24rpx;
+    margin-bottom: 20rpx;
+}
+.me_hang{
+    background:#fff;
+    padding-left: 20rpx;
+}
+.me_hang text{
+    color: #323232;
+    font-size: 24rpx;
+    line-height: 1;
+}
+.me_inner_view{
+    border-bottom: 1rpx solid #f2f2f2;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100rpx;
+    padding-right: 20rpx;
+}
+.me_inner_view text:nth-child(2){
+    color: #b2b2b2;
+    font-size: 24rpx;
+}
+.me_last{
+    padding-left: 0;
+    margin-bottom: 20rpx;
+}
+.me_last .me_inner_view{
+    padding-left: 20rpx;
+}
+.me_order_relate{
+    background: #fff;
+    border-bottom: 1rpx solid #f2f2f2;
+    padding: 30rpx 20rpx;
+    font-size:24rpx;
+    color: #999;
+    margin-bottom: 128rpx;
+}
+.me_order_relate text{
+    display: block;
+
+}
+.me_order_relate text:nth-child(1){
+    margin-bottom: 30rpx;
+}
+.me_btmBtn{
+    background: #fff;
+    border-top: 1rpx solid #f2f2f2;
+    height: 88rpx;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    /*padding-right: 20rpx;*/
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.me_btmBtn view{
+    display: inline-block;
+    height: 60rpx;
+    font-size: 28rpx;
+    line-height: 60rpx;
+    padding: 0 20rpx;
+    color: #999;
+    margin-right: 20rpx;
+    border: 1rpx solid #ccc;
+}
+.me_btmBtn view:nth-child(2){
+    color: #fff;
+    border-color: #ff612a;
+    background: #ff612a;
+}

@@ -1,0 +1,128 @@
+/**index.wxss**/
+.container{
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0rpx;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.header{
+  width: 100%;
+  height: 210rpx;
+  background-size: 100% 210rpx;
+  display: block;
+  position:fixed;
+  left: 0;
+  top: 0;
+}
+.searchTop{
+   height: 80rpx;
+}
+.searchTop .menu{
+   width: 30rpx;
+   height: 30rpx;
+   margin-left: 20rpx;
+   margin-top: 26rpx;
+   float: left;
+}
+.searchTop input{
+  float: left;
+  width: 74%;
+  height: 60rpx;
+  background-color: white;
+  margin-top: 15rpx;
+  margin-left: 20rpx;
+  border-radius: 30rpx;
+  padding: 0 0 0 40rpx;
+  font-size: 24rpx;
+}
+.searchTop .user{
+   width: 30rpx;
+   height: 35rpx;
+   margin-left: 30rpx;
+   margin-top: 26rpx;
+   float: left;
+}
+.shopShow{
+   width: 100%;
+   height: 80rpx;
+   margin-top: 30rpx;
+}
+.shopLogo{
+   width: 80rpx;
+   height: 80rpx;
+   margin-left: 20rpx;
+   float: left;
+}
+.shopLogo image{
+   width: 80rpx;
+   height: 80rpx;
+}
+.shopMsg{
+  width: 600rpx;
+  height: 80rpx;
+  float: left;
+  margin-left: 20rpx;
+  color: white;
+  font-size: 30rpx;
+}
+.ShopName{
+  height: 30rpx;
+}
+.ShopAddress{
+  font-size: 24rpx;
+  margin-top: 20rpx;
+  height: 25rpx;
+  /* overflow: hidden; */
+}
+.ShopAddress image{
+  width: 20rpx;
+  height: 25rpx;
+  /* float: left; */
+  margin-top: 5rpx;
+  display: inline-block;
+}
+.ShopAddressText{
+  width: 500rpx;
+  display: inline-block;
+  margin-left: 20rpx;
+  height: 30rpx;
+  overflow: hidden;
+}
+.main{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 210rpx;
+}
+.li{
+  width: 49%;
+  height: 550rpx;
+  float: left;
+  background-color: white;
+}
+.li image{
+   width: 100%;
+   height: 392rpx;
+}

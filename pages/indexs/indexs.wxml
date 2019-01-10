@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<view class="container">
+    <button>获取用户唯一标识openid</button>
+    openid:{{openid}}session_key:{{session_key}}
+
+
+    <view class="tui-picker-content">
+      <view class="tui-picker-name">省市区三级联动选择</view>
+      <picker bindchange="changeRegin" mode = "region" value="{{region}}">
+        <!-- <view class="tui-picker-detail">{{region[0]}} - {{region[1]}} - {{region[2]}}</view> -->
+        <view class="tui-picker-detail">{{region}}</view>
+      </picker>
+    </view>
+
+    <view class="userinfo">
+        <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+        <block wx:else>
+            <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </block>
+    </view>
+    <!--<view class="usermotto">-->
+        <!--<text class="user-motto">{{motto}}</text>-->
+    <!--</view>-->
+    <!--<button bindtap="toMyPage" type="primary" plain>-->
+        <!--Go to My Page-->
+    <!--</button>-->
+    <navigator url="../sureOrder/sureOrder" class="me_margin">确认订单*</navigator>
+    <navigator url="../shopList/shopList" class="me_margin">店铺商品列表</navigator>
+    <navigator url="../shopInfo/shopInfo" class="me_margin">店铺详情*</navigator>
+    <navigator url="../personalInfo/personalInfo" class="me_margin">个人信息*</navigator>
+    <navigator url="../personalCenter/personalCenter" class="me_margin">个人中心*</navigator>
+    <navigator url="../PaymentFinish/PaymentFinish" class="me_margin">支付完成页</navigator>
+    <navigator url="../Payment/Payment" class="me_margin">支付进行页</navigator>
+    <navigator url="../shopCar/shopCar" class="me_margin">购物车</navigator>
+    <navigator url="../orderInfo/orderInfo" class="me_margin">订单详情*</navigator>
+    <navigator url="../myOrder/myOrder" class="me_margin">我的订单*</navigator>
+    <navigator url="../shopMsg/shopMsg" class="me_margin">商品详情</navigator>
+    
+</view>

@@ -1,0 +1,81 @@
+<!--index.wxml-->
+<import src="../../wxParse/wxParse.wxml"/>
+<view class="containerCar">
+  <view class="me_person">
+    <image src="{{goBack}}" class="me_goBack" bindtap="goBack"></image>
+    <text>个人信息</text>
+    <image src="{{threeInfo}}" class="me_threeInfo"></image>
+  </view>
+  <!-- 轮播图 -->
+  <view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <!-- <view class="swiper-item"> -->
+            <!-- {{item}} -->
+            <image class="slide-image" src="{{ item }}"></image>
+             <!-- <image class="swiper-item" :src="{{item}}"></image>  -->
+             <!-- </view> -->
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+  <view class='shopMsgPrice'>
+    <view class='shopName'>
+       {{shopDataInfo.name}}
+    </view>
+    <view class='shopSuggest'>
+    {{shopDataInfo.recommend}}
+    </view>
+    <view class='shopPrice'>
+      <text>供应价：</text><text style='color:#ff461C;'>￥</text> <text style='font-size:36rpx;color:#ff461C;'>{{shopDataInfo.priceSupply}}</text>
+    </view>
+  </view>
+  <view class='freight'>
+   <text style='color:#737480;'>运费 </text> <text style='color:#323232;'>免运费</text>
+  </view>
+  <view class='shopSpec'>
+   <view style='color:#737480;'>规格 </view> <view bindtap='selectSpec' style='color:#323232;'><text>...</text></view>
+  </view>
+  <view class='desc'>
+  <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  <!-- <image style='width:750rpx;' src='http://ihome-img-test.oss-cn-beijing.aliyuncs.com/saturn/cyj4nPJmbK.jpg'></image> -->
+  </view>
+  <view style='width:100%;height:88rpx;'>
+  </view>
+  <view class='specChange' style='display:{{show}}'>
+     <view class='ImgPrice'>
+        <image src='http://ihome-img-test.oss-cn-beijing.aliyuncs.com/saturn/cyj4nPJmbK.jpg'></image>
+        <view class='PriceImg'>
+           <text>￥</text> {{nowSpec.priceSupply}}
+        </view>
+     </view>
+     <view class='specSku' wx:for="{{specAttr}}" wx:for-index="indexs" wx:for-item="item"  wx:key="id">
+        <view class='specTitle'>{{item.pKeyId[1]}}</view> 
+        <view wx:for="{{item.pValue}}" class='skuAttr'  wx:for-item="items" bindtap='clickSpec' data-index='{{indexs}}' data-indexs='{{aindex}}' data-ClassId='{{item.pKeyId[0]}}' data-SpecNameId='{{item.id}}' data-SpecId='{{item.pId[aindex]}}' wx:key="{{index}}" wx:for-index="aindex" style='border-color:{{item.color[aindex]}};color:{{item.color[aindex]}}'>
+      <!-- {{item.id}} {{item.pId[aindex]}}  -->{{items}}</view>
+     </view>
+     <view class='amountShow'>
+        <view class='amounts'>数量</view>
+        <view class='amounts'>
+           <view class="stepper">  
+       
+              <text class="{{minusStatus}}" bindtap="bindMinus">-</text>  
+              <input type="number" bindchange="bindManual" value="{{num}}" />  
+              <text class="normal" bindtap="bindPlus">+</text>  
+           </view>  
+        </view>
+     </view>
+  </view>
+  <view class='bottom'>
+     <view class='bottomLeft'>客服</view>
+     <view class='bottomLeft'>购物车</view>
+     <view class='bottomRight' style='background:#fe8524;'>加入购物车</view>
+     <view class='bottomRight' bindtap='buy' style='background:#ff471d;'>立即购买</view>
+  </view>
+  <view class='cover' bindtap='isShow' style='display:{{show}}'>
+  </view>
+</view>

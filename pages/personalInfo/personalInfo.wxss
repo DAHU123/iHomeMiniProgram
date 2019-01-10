@@ -1,0 +1,76 @@
+/**sureOrder.wxss**/
+.me_person{
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1rpx solid #f2f2f2;
+    background: #fff;
+    width: 710rpx;
+    height: 80rpx;
+    padding: 0 20rpx;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.me_person text{
+    font-size: 30rpx;
+    color: #9a9a9a;
+}
+.me_goBack{
+    width: 15rpx;
+    height: 28rpx;
+    transform:rotateY(180deg);
+}
+.me_goTo{
+    width: 15rpx;
+    height: 28rpx;
+}
+.me_userLogo{
+    width: 60rpx;
+    height: 60rpx;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.me_threeInfo{
+    width: 34rpx;
+    height: 28rpx;
+}
+.me_hang{
+    background:#fff;
+    padding-left: 20rpx;
+}
+.me_inner_view{
+    border-bottom: 1rpx solid #f2f2f2;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100rpx;
+    padding-right: 20rpx;
+}
+.me_inner_view text:nth-child(2){
+    color: #b2b2b2;
+    font-size: 24rpx;
+}
+.me_hang text{
+    color: #323232;
+    font-size: 24rpx;
+    line-height: 1;
+}
+.me_height{
+    height: 80rpx;
+}
+.me_last{
+    padding-left: 0;
+    margin-bottom: 20rpx;
+}
+.me_last .me_inner_view{
+    padding-left: 20rpx;
+}
+.me_ctrl_width text:nth-child(1){
+    width: 180rpx;
+}
+

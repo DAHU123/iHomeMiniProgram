@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="containerCar">
+  <view class="me_person">
+    <image src="{{goBack}}" class="me_goBack" bindtap="goBack"></image>
+    <text>收货地址</text>
+    <image src="{{threeInfo}}" class="me_threeInfo"></image>
+  </view>
+  <view style='width:100%;height:80rpx;'></view>
+  <view class='topHandle' wx:for="{{AddressData}}" wx:key="id">
+     <view class='Name'>
+       <view>{{item.consignee}}</view>
+       <view>{{item.phone}}</view>
+     </view>
+     <view class='Address'>
+      {{item.cProvinceName}}{{item.cCityName}}{{item.cCountyName}}{{item.address}}
+     </view>
+     <view class='select'>
+       <view class='Setting'>
+          <image wx:if="{{item.status  == 0}}" src='http://ihome-img-dev.oss-cn-beijing.aliyuncs.com/%E5%85%A8%E9%80%89no@2x.png'></image>
+         <image wx:if="{{item.status == 1}}" src='http://ihome-img-dev.oss-cn-beijing.aliyuncs.com/%E5%85%A8%E9%80%89@2x.png'></image>
+         <text>默认地址</text>
+       </view>
+       <view class='operation'>
+         <image style='margin-left: 150rpx;' bindtap='UpataAddress' data-addressId='{{item.id}}'src='http://ihome-img-dev.oss-cn-beijing.aliyuncs.com/%E7%BC%96%E8%BE%91@2x.png'></image>
+         <text bindtap='UpataAddress' data-addressId='{{item.id}}'>编辑</text>
+         <image style='margin-left: 30rpx;' bindtap='del' data-delId='{{item.id}}'   src='http://ihome-img-dev.oss-cn-beijing.aliyuncs.com/%E5%9C%B0%E5%9D%80%E5%88%A0%E9%99%A4@2x.png'></image>
+         <text bindtap='del' data-delId='{{item.id}}' >删除</text>
+       </view>
+     </view>
+  </view>
+  <view class='buttom' bindtap='AddAddress' >
+    + 新增地址
+  </view>
+</view>

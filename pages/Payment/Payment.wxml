@@ -1,0 +1,44 @@
+<!--personalCenter.wxml-->
+<view class="me_person">
+    <image src="{{goBack}}" class="me_goBack" bindtap="goBack"></image>
+    <text>个人信息</text>
+    <image src="{{threeInfo}}" class="me_threeInfo"></image>
+</view>
+<view class='imgage'>
+实付款
+</view>
+<view style='text-align: center;background-color: white;padding:30rpx 0 70rpx 0;font-size：58rpx;'>
+   <text style='font-size: 30rpx;color:#ff6129;'>￥</text>
+   <text style='font-size: 58rpx;color:#ff6129;'>22999.00</text>
+    
+</view>
+<view class='shopShowList'>
+  <image src='http://luckcul-img-dev.oss-cn-beijing.aliyuncs.com/luckcul/4Dyc2TniMY.jpg'></image>
+  <image src='http://luckcul-img-dev.oss-cn-beijing.aliyuncs.com/luckcul/5BjkfDCDyJ.jpg'></image>
+  <image src='http://luckcul-img-dev.oss-cn-beijing.aliyuncs.com/luckcul/5azrfhKD5a.jpg'></image>
+  <image src='http://luckcul-img-dev.oss-cn-beijing.aliyuncs.com/luckcul/5zTEJMERNA.jpg'></image>
+</view>
+<view style='margin:0 auto;font-size:22rpx;color:#b2b2b2;'>
+   <view style='width:700rpx;height:60rpx;margin:0 auto;'>
+      <view style='width:200rpx;height:60rpx;line-height:60rpx;float:left;'>
+         共5件
+      </view>
+      <view style='width:500rpx;height:60rpx;line-height:60rpx;float:left;text-align:right;'>
+         下单时间：2018/7/27 15:54:31
+      </view>
+   </view>
+</view>
+<view style='background:white;margin:0 auto;font-size:24rpx;'>
+   <view style='width:700rpx;height:80rpx;margin:0 auto;'>
+      <view style='width:200rpx;height:80rpx;line-height:80rpx;float:left;'>
+         <image src='http://luckcul-img-dev.oss-cn-beijing.aliyuncs.com/luckcul/weixinzhifu@2x.png'
+         style='width:35rpx;height:35rpx;float:left;margin-top:25rpx;'></image>
+          <text style='display:inherit-block;margin-left:15rpx;'>微信支付</text> 
+      </view>
+      <view style='width:500rpx;height:80rpx;line-height:80rpx;float:left;text-align:right;'>
+        <image src='http://luckcul-img-dev.oss-cn-beijing.aliyuncs.com/luckcul/%E5%85%A8%E9%80%89@2x.png' style='width:35rpx;height:35rpx;float:right;margin-top:25rpx;'></image>
+      </view>
+   </view>
+</view>
+
+

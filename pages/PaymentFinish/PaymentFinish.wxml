@@ -1,0 +1,35 @@
+<!--personalCenter.wxml-->
+<view class="me_person">
+    <image src="{{goBack}}" class="me_goBack" bindtap="goBack"></image>
+    <text>个人信息</text>
+    <image src="{{threeInfo}}" class="me_threeInfo"></image>
+</view>
+<view class='imgage'>
+  <image src='http://ihome-img-test.oss-cn-beijing.aliyuncs.com/saturn/%E6%94%AF%E4%BB%98%E6%88%90%E5%8A%9F@2x.png'></image>
+
+</view>
+<view style='text-align: center;background-color: white;padding:40rpx 0 90rpx 0;'>
+   支付成功
+</view>
+<view style='background:white;margin:0 auto;font-size:24rpx;'>
+   <view style='width:700rpx;height:80rpx;margin:0 auto;border-top:1rpx solid #EEEEEE'>
+      <view style='width:200rpx;height:80rpx;line-height:80rpx;float:left;'>
+         订单号：
+      </view>
+      <view style='width:500rpx;height:80rpx;line-height:80rpx;float:left;text-align:right;'>
+         7845887#FA548FA5254
+      </view>
+   </view>
+</view>
+<view style='background:white;margin:0 auto;font-size:24rpx;'>
+   <view style='width:700rpx;height:80rpx;margin:0 auto;border-top:1rpx solid #EEEEEE'>
+      <view style='width:200rpx;height:80rpx;line-height:80rpx;float:left;'>
+         成交时间：
+      </view>
+      <view style='width:500rpx;height:80rpx;line-height:80rpx;float:left;text-align:right;'>
+         2018/7/27 15:54:31
+      </view>
+   </view>
+</view>
+
+

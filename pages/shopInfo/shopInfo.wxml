@@ -1,0 +1,7 @@
+<!--sureOrder.wxml-->
+<view class="me_block">
+    <image class="companyLogo" src="{{logo}}"></image>
+    <text class="companyName">{{companyName}}</text>
+</view>
+<view class="companyIntro"><text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;{{companyIntro}}</text></view>
+<view class="companyAddress"><text>公司地址:</text><text>{{companyAddress}}</text></view>

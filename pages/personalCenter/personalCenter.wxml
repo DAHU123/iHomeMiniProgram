@@ -1,0 +1,47 @@
+<!--sureOrder.wxml-->
+<view class="me_person">
+    <image src="{{goBack}}" class="me_goBack" bindtap="goBack"></image>
+    <text>个人中心</text>
+    <image src="{{threeInfo}}" class="me_threeInfo" bindtap="showBlack"></image>
+</view>
+<view class="me_mask" hidden="{{hiddenMask}}" bindtap="hideBlack"></view>
+<view class="me_black" hidden="{{hiddenBlack}}">
+    <view class="me_yiHang">
+        <image src="{{car}}"></image>
+        <text>购物车</text>
+    </view>
+    <view class="me_yiHang">
+        <image src="{{people}}"></image>
+        <text>个人中心</text>
+    </view>
+</view>
+<view style="padding-top: 80rpx;"></view>
+<view class="me_ctrl_bai" bindtap='UserInfo'>
+    <view class="me_orange">
+        <image src="{{userInfo.avatarUrl}}" class="me_userLogo"></image>
+        <view class="me_ctrl_size">
+            <view>
+                <text decode="{{true}}">{{userInfo.nickName}}&nbsp;&nbsp;&nbsp;</text>
+                <image src="{{isSex}}" class="me_sex"></image>
+            </view>
+            <!--<br>-->
+            <text>15993382869</text>
+        </view>
+        <image src="{{goTo}}" class="me_goTo"></image>
+
+    </view>
+</view>
+<view class="me_status">
+    <view>
+        <image src="{{paySrc}}" class="me_img"></image>
+        <text>待付款</text>
+    </view>
+    <view>
+        <image src="{{noDeli}}" class="me_img"></image>
+        <text>待收货</text>
+    </view>
+    <view>
+        <image src="{{allSrc}}" class="me_img"></image>
+        <text>全部订单</text>
+    </view>
+</view>

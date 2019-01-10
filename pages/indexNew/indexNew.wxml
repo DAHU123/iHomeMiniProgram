@@ -1,0 +1,106 @@
+<!--index.wxml-->
+<view class="container">
+
+    <view class='header' style="background-image: url('http://ihome-img-dev.oss-cn-beijing.aliyuncs.com/%E5%BA%97%E9%93%BAbg.png');">
+
+        <view class="shopShow">
+            <view class="shopLogo">
+                <image src="{{shopInfo.cLogo}}"></image>
+                <!--<image src='http://ihome-img-dev.oss-cn-beijing.aliyuncs.com/saturn/3nPGchtT7A.jpg'></image>-->
+            </view>
+            <view class="shopMsg">
+                <view class='ShopName'>{{shopInfo.cShopName}}</view>
+                <!--<view class='ShopName'>店铺名称</view>-->
+                <!--<text class='ShopAddressText'>欢迎光临</text>-->
+                <view class='ShopAddress'>
+                    欢迎光临
+                    <!--<image src='http://ihome-img-dev.oss-cn-beijing.aliyuncs.com/saturn/%E5%BA%97%E9%93%BA%E5%9C%B0%E5%9D%80.png'></image>-->
+                    <!--<text class='ShopAddressText'>{{shopInfo.cProvinceName}} {{shopInfo.cCityName}} {{shopInfo.cCountyName}} {shopInfo.cAddress}} </text>-->
+                </view>
+            </view>
+            <icon type="search" size="15"></icon>
+            <image class='user' src='http://ihome-img-dev.oss-cn-beijing.aliyuncs.com/%E6%88%91@2x.png'></image>
+
+        </view>
+
+    </view>
+
+    <!--一级分类-->
+    <view class="me_oneClassify">
+        <view data-one_class="{{null}}" class="{{one_class==null?'me_ono_active':''}}" bindtap="oneClassClick">全部</view>
+        <view wx:for="{{oneCList}}" wx:key="{{item}}" data-one_class="{{item}}" class="{{one_class.id==item.id?'me_ono_active':''}}" bindtap="oneClassClick">
+            {{item.label}}
+        </view>
+        <!--<view>一级分类</view>-->
+        <!--<view class="me_ono_active">一级分类</view>-->
+    </view>
+
+    <!--二级分类-->
+    <view class="me_twoClassify">
+        <view class="me_middle clearfix" style="width:{{twoWidth}}">
+            <view data-two_class="{{null}}" class="me_micro {{two_class==null?'me_two_active':''}}" bindtap="twoClassClick">全部</view>
+            <view wx:for="{{twoCList}}" wx:key="{{item}}" data-two_class="{{item}}" class="me_micro {{two_class.id==item.id?'me_two_active':''}}" bindtap="twoClassClick">
+                {{item.label}}
+            </view>
+
+            <!--<view class="me_micro me_two_active">精选品牌</view>-->
+            <!--<view class="me_micro">潮流男装</view>-->
+
+        </view>
+
+    </view>
+
+    <!--条件相关的-->
+    <view class="me_upAndDown">
+        <view class="me_wrap_con">
+
+            <view>
+                <!--子分类名城-->
+                {{two_class==null? '全部' :two_class.label}}
+            </view>
+            <view class="me_switch">
+                <!--<view class="me_s_active" bindtap="sortBySale">-->
+                    <!--销量-->
+                <!--</view>-->
+                <view bindtap="sortByPrice">
+                    价格
+                    <image src="../../utils/img/sort.png" class="me_sort" wx:if="{{isDefault == 1}}"></image>
+                    <image src="../../utils/img/sortAsc.svg" class="me_sort" wx:if="{{isDefault == 2}}"></image>
+                    <image src="../../utils/img/sortDesc.svg" class="me_sort" wx:if="{{isDefault == 3}}"></image>
+                </view>
+            </view>
+
+        </view>
+    </view>
+
+    <!--用来放该分类下的商品-->
+    <view class="me_list">
+        <view class="me_indexList">
+            <view class="me_rect" wx:for="{{goodsList}}" wx:key="{{item}}">
+                <!--<image src="../../utils/img/pic3.jpg" class="me_goodsImg"></image>-->
+                <image src="{{item.mainImg}}" class="me_goodsImg"></image>
+                <view class="me_pad">
+                    <!--<text class="me_goodsTitle">这个是商品的名称,限制两行,超出以后显示省略号,,,声明声明声明声明声明声明声明声明</text>-->
+                    <text class="me_goodsTitle">{{item.name}}</text>
+                </view>
+                <text class="me_price">¥{{item.priceSupply}}</text>
+            </view>
+
+            <view class="me_noOne" hidden="{{isHidden}}">
+                抱歉,您要搜索的商品不存在...
+            </view>
+
+            <!--<view class="me_rect">-->
+                <!--<image src="../../utils/img/pic3.jpg" class="me_goodsImg"></image>-->
+                <!--<view class="me_pad">-->
+                    <!--<text class="me_goodsTitle">这个是商品的名称,限制两行,超出以后显示省略号,,,声明声明声明声明声明声明声明声明</text>-->
+                <!--</view>-->
+                <!--<text class="me_price">¥45.69</text>-->
+            <!--</view>-->
+
+        </view>
+
+    </view>
+
+
+</view>

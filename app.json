@@ -1,0 +1,29 @@
+{
+  "pages":[
+    "pages/indexNew/indexNew",
+    "pages/index/index",
+    "pages/searchResult/searchResult",
+    "pages/myOrder/myOrder",
+    "pages/auto/auto",
+    "pages/addressLIst/addressLIst",
+    "pages/updataAddress/updataAddress",
+    "pages/shopInfo/shopInfo",
+    "pages/personalInfo/personalInfo",
+    "pages/personalCenter/personalCenter",
+    "pages/orderInfo/orderInfo",
+    "pages/practice/practice",
+    "pages/logs/logs",
+    "pages/PaymentFinish/PaymentFinish",
+    "pages/Payment/Payment",
+    "pages/shopCar/shopCar",
+    "pages/shopMsg/shopMsg",
+    "pages/sureOrder/sureOrder"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTextStyle":"white",
+    "navigationBarTitleText": "首页",
+    "enablePullDownRefresh": true
+  }
+}

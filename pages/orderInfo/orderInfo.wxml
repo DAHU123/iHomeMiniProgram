@@ -1,0 +1,100 @@
+<!--sureOrder.wxml-->
+<view class="me_person">
+    <image src="{{goBack}}" class="me_goBack" bindtap="goBack"></image>
+    <text>订单详情</text>
+    <image src="{{threeInfo}}" class="me_threeInfo" bindtap="showBlack"></image>
+</view>
+<view class="me_mask" hidden="{{hiddenMask}}" bindtap="hideBlack"></view>
+<view class="me_black" hidden="{{hiddenBlack}}">
+    <view class="me_yiHang">
+        <image src="{{car}}"></image>
+        <text>购物车</text>
+    </view>
+    <view class="me_yiHang">
+        <image src="{{people}}"></image>
+        <text>个人中心</text>
+    </view>
+</view>
+<view style="padding-top: 120rpx;"></view>
+<view class="me_orderStatus">
+    <image src="{{checkAll}}" class="me_checkAll"></image>
+    <text>待收货</text>
+</view>
+<view class="me_express">
+    <text>快递单号</text>
+    <text decode="{{true}}">{{expressNum}}</text>
+</view>
+<view class="me_address">
+    <view class="me_first">
+        <image src="{{infoAdd}}" class="me_infoAdd"></image>
+        <text>{{userNickName}}</text>
+        <text>{{userPhone}}</text>
+    </view>
+    <text class="me_left">地址:{{address}}</text>
+</view>
+<view class="me_goods">商品清单</view>
+<view class="me_goodsList">
+    <view class="me_inner_goods">
+        <image src="{{userLogo}}" class="me_goodsImg"></image>
+        <view class="me_view_column">
+            <view class="me_goodsName">袖大领口低领秋衣t恤超薄打底内衣紧打底内衣紧打底内衣紧打底内衣紧身女T恤上衣 </view>
+            <text class="me_sku">规格一：XXX；规格二：XXX </text>
+            <view class="me_price">
+                <text>￥29999.12</text>
+                <text>×2</text>
+            </view>
+        </view>
+    </view>
+    <view class="me_inner_goods">
+        <image src="{{userLogo}}" class="me_goodsImg"></image>
+        <view class="me_view_column">
+            <view class="me_goodsName">袖大领口低领秋衣t恤超薄打底内衣紧打底内衣紧打底内衣紧打底内衣紧身女T恤上衣 </view>
+            <text class="me_sku">规格一：XXX；规格二：XXX </text>
+            <view class="me_price">
+                <text>￥29999.12</text>
+                <text>×2</text>
+            </view>
+        </view>
+    </view>
+    <view class="me_inner_goods">
+        <image src="{{userLogo}}" class="me_goodsImg"></image>
+        <view class="me_view_column">
+            <view class="me_goodsName">袖大领口低领秋衣t恤超薄打底内衣紧打底内衣紧打底内衣紧打底内衣紧身女T恤上衣 </view>
+            <text class="me_sku">规格一：XXX；规格二：XXX </text>
+            <view class="me_price">
+                <text>￥29999.12</text>
+                <text>×2</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="me_express me_fontSize">
+    <text>商品计价</text>
+    <text>￥9898989.36</text>
+</view>
+<view class="me_hang">
+    <view class="me_inner_view me_height">
+        <text>运费</text>
+        <text>{{userNickName}}</text>
+    </view>
+</view>
+<view class="me_hang me_last">
+    <view class="me_inner_view me_height">
+        <text>订单金额</text>
+        <text style="color: #ff6128;">￥9898698.36</text>
+    </view>
+</view>
+<view class="me_hang me_last">
+    <view class="me_inner_view me_height">
+        <text>备注</text>
+        <text style="color: #323232;">多发一个,与商家已协商一致</text>
+    </view>
+</view>
+<view class="me_order_relate">
+    <text>订单编号：123456789123456</text>
+    <text>下单时间：2017/12/09 12:00:00</text>
+</view>
+<view class="me_btmBtn">
+    <view bindtap="tabMMMM">取消订单</view>
+    <view bindtap="tabMMMM">确认收货</view>
+</view>

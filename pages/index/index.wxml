@@ -1,0 +1,51 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='header' style="background-image: url('http://ihome-img-dev.oss-cn-beijing.aliyuncs.com/%E5%BA%97%E9%93%BAbg.png');">
+    <view class='searchTop'>
+     <image class='menu' bindtap='UserCenter'  src='http://ihome-img-dev.oss-cn-beijing.aliyuncs.com/%E4%B8%89%E6%A8%AA@2x.png'></image>
+     <input type='search' bindconfirm="adadad" bindinput="wangjian" value='{{searchValue}}' confirm-type="search" placeholder="请输入产品名称"></input>
+     <!-- adadad -->
+     <image class='user' bindtap="adadad" src='http://ihome-img-dev.oss-cn-beijing.aliyuncs.com/%E6%88%91@2x.png'></image>
+    </view>
+    <view class="shopShow" bindtap='clear'>
+       <view class="shopLogo">
+        <image src='http://ihome-img-dev.oss-cn-beijing.aliyuncs.com/saturn/3nPGchtT7A.jpg'></image>
+       </view>
+       <view class="shopMsg">
+         <view class='ShopName'>{{shopInfo.cShopName}}</view>
+         <view class='ShopAddress'><image src='http://ihome-img-dev.oss-cn-beijing.aliyuncs.com/saturn/%E5%BA%97%E9%93%BA%E5%9C%B0%E5%9D%80.png'></image> 
+          <text class='ShopAddressText'>{{shopInfo.cProvinceName}} {{shopInfo.cCityName}} {{shopInfo.cCountyName}} {shopInfo.cAddress}} </text>
+         </view>
+       </view>
+    </view>
+     
+  </view>
+  <view class='main'>
+     <view class='li' wx:for="{{dataList}}" bindtap='shopInfo' data-shop='{{item}}'>
+        <image src='{{item.mainImg}}' ></image>
+        <view class='GoodsMsg'>
+           <text style='width:90%;font-size:24rpx;color:#323232;display: inline-block;height:50rpx;line-height:26rpx; overflow:hidden;padding:0 5%'>{{item.name}}</text>
+           <text style='width:80%;font-size:24rpx;color:#323232;display: inline-block;height:50rpx;line-height:26rpx; overflow:hidden;padding:0 15rpx;margin-top:50rpx;color:#cccccc;'>供应价 <text style='font-size:26rpx;color:#ff6129'>￥{{item.priceSupply}}</text>    </text>
+        </view>
+     </view>
+     <view class='li' style='margin-left:2%;display:none;'>
+        <image src='http://ihome-img-dev.oss-cn-beijing.aliyuncs.com/saturn/PSDbPNpzsM.jpg'></image>
+        <view class='GoodsMsg'>
+           <text style='font-size:24rpx;color:#323232;display: inline-block;height:50rpx;line-height:26rpx; overflow:hidden;padding:0 15rpx;'>荣耀MagicBook 14英寸轻薄窄边框笔记本电脑（i7-8550U 8G 256G MX150 2G独显 FHD IPS 正版Office）冰河银</text>
+           <text style='font-size:24rpx;color:#323232;display: inline-block;height:50rpx;line-height:26rpx; overflow:hidden;padding:0 15rpx;margin-top:50rpx;color:#cccccc;'>供应价 <text style='font-size:26rpx;color:#ff6129'>￥4999.99</text>    </text>
+        </view> 
+     </view>
+  </view>
+
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+</view>

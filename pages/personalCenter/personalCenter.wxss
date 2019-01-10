@@ -1,0 +1,102 @@
+/**sureOrder.wxss**/
+.me_person{
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1rpx solid #f2f2f2;
+    background: #fff;
+    width: 710rpx;
+    height: 80rpx;
+    padding: 0 20rpx;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+}
+.me_person text{
+    font-size: 30rpx;
+    color: #9a9a9a;
+}
+.me_goBack{
+    width: 15rpx;
+    height: 28rpx;
+    transform:rotateY(180deg);
+}
+.me_userLogo{
+    width: 114rpx;
+    height: 114rpx;
+    margin-right: 30rpx;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.me_threeInfo{
+    width: 34rpx;
+    height: 28rpx;
+}
+.me_ctrl_bai{
+    background:#fff;
+    padding: 20rpx 20rpx 0;
+}
+.me_orange{
+    padding: 45rpx 20rpx 45rpx 30rpx;
+    height: 114rpx;
+    background: url("http://ihome-img-test.oss-cn-beijing.aliyuncs.com/saturn/bgCenter.png") no-repeat 50%;
+    background-size: cover;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.me_ctrl_size{
+    color: #fff;
+    height: 114rpx;
+    flex-grow:1;
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.me_ctrl_size view{
+    padding: 20rpx 0 30rpx 0;
+    font-size: 26rpx;
+    line-height: 26rpx;
+}
+.me_ctrl_size text:nth-child(2){
+    font-size: 22rpx;
+}
+.me_goTo{
+    width: 15rpx;
+    height: 28rpx;
+}
+.me_sex{
+    width: 20rpx;
+    height: 20rpx;
+}
+.me_status{
+    height: 120rpx;
+    border-bottom: 1rpx solid #f2f2f2;
+    background: #fff;
+    margin-bottom: 20rpx;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.me_status view{
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.me_status view text{
+    font-size: 22rpx;
+    color: #323232;
+}
+.me_img{
+    width: 30rpx;
+    height: 30rpx;
+    margin-bottom: 15rpx;
+}

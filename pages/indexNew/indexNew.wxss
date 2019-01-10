@@ -1,0 +1,271 @@
+/**index.wxss**/
+.container{
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0rpx;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.header{
+  width: 100%;
+  /*height: 210rpx;*/
+  background-size: 100% 210rpx;
+  display: block;
+  position:fixed;
+  left: 0;
+  top: 0;
+}
+.searchTop{
+  height: 80rpx;
+}
+.searchTop .menu{
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 20rpx;
+  margin-top: 26rpx;
+  float: left;
+}
+.searchTop input{
+  float: left;
+  width: 74%;
+  height: 60rpx;
+  background-color: white;
+  margin-top: 15rpx;
+  margin-left: 20rpx;
+  border-radius: 30rpx;
+  padding: 0 0 0 40rpx;
+  font-size: 24rpx;
+}
+.user{
+    width: 30rpx;
+    height: 35rpx;
+    margin: 0 30rpx;
+  /*margin-left: 30rpx;*/
+  /*margin-top: 26rpx;*/
+  /*float: left;*/
+}
+.shopShow{
+    width: 100%;
+    height: 80rpx;
+    margin: 30rpx 0;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.shopLogo{
+  width: 80rpx;
+  height: 80rpx;
+  margin-left: 20rpx;
+  float: left;
+}
+.shopLogo image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.shopMsg{
+  width: 600rpx;
+  height: 80rpx;
+  float: left;
+  margin-left: 20rpx;
+  color: white;
+  font-size: 30rpx;
+}
+.ShopName{
+  height: 30rpx;
+}
+.ShopAddress{
+  font-size: 24rpx;
+  margin-top: 20rpx;
+  height: 25rpx;
+  /* overflow: hidden; */
+}
+.ShopAddress image{
+  width: 20rpx;
+  height: 25rpx;
+  /* float: left; */
+  margin-top: 5rpx;
+  display: inline-block;
+}
+.ShopAddressText{
+  width: 500rpx;
+  display: inline-block;
+  margin-left: 20rpx;
+  height: 30rpx;
+  overflow: hidden;
+}
+.main{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 210rpx;
+}
+.li{
+  width: 49%;
+  height: 550rpx;
+  float: left;
+  background-color: white;
+}
+.li image{
+  width: 100%;
+  height: 392rpx;
+}
+
+
+/*后来新增的样式*/
+.me_oneClassify{
+    position: fixed;
+    height: calc(100% - 140rpx);
+    overflow-y: scroll;
+    width: 25%;
+    left: 0;
+    top: 140rpx;
+}
+.me_oneClassify view{
+    text-align: center;
+    font: 26rpx/60rpx "微软雅黑";
+    color: #323232;
+    border-bottom: 1rpx solid #ccc;
+    border-right: 1rpx solid #ccc;
+}
+.me_ono_active{
+    color: #ff6129!important;
+    border-right: 1rpx solid #f8f8f8!important;
+}
+.me_twoClassify{
+    position: fixed;
+    height: 62rpx;
+    width: 75%;
+    right: 0;
+    top: 140rpx;
+    overflow-x: scroll;
+    border-bottom: 1rpx solid #e2e2e2!important;
+
+}
+.me_twoClassify view.me_micro{
+    float: left;
+    font: 26rpx/60rpx "微软雅黑";
+    color: #323232;
+    padding: 0 15rpx;
+    border-bottom: 1rpx solid #f8f8f8;
+    margin-bottom: -1rpx;
+}
+.me_twoClassify view.me_two_active{
+    color: #ff6129!important;
+    border-bottom: 1rpx solid #ff6129;
+}
+.me_middle{
+    /*width:2000rpx;*/
+    height: 60rpx;
+}
+.me_upAndDown{
+    position: fixed;
+    height: 60rpx;
+    width: 75%;
+    right: 0;
+    top: 205rpx;
+    border-bottom: 1rpx solid #e2e2e2;
+}
+.me_wrap_con{
+    padding: 0 20rpx;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24rpx;
+    line-height: 60rpx;
+}
+.me_wrap_con>view:nth-child(1){
+    font-weight: bold;
+}
+.me_switch{
+    width: 30%;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.me_s_active{
+    color: #ff6129;
+}
+.me_sort{
+    width: 30rpx;
+    height: 22rpx;
+}
+.me_list{
+    position: fixed;
+    width: 75%;
+    right: 0;
+    top: 266rpx;
+    overflow-y: scroll;
+    margin-bottom: 50rpx;
+    height: 75%;
+}
+.me_indexList{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15rpx;
+}
+
+.me_rect{
+    width: calc(100% / 2 - 10rpx);
+    /*height: 334rpx;*/
+    margin-right: 5rpx;
+    margin-bottom: 5rpx;
+    background: #fff;
+    box-sizing: content-box;
+}
+.me_goodsImg{
+    width: 100%;
+    height: 200rpx;
+}
+.me_goodsTitle{
+    font-size: 24rpx;
+    line-height: 24rpx;
+    height: 48rpx;
+    color: #323232;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+}
+.me_pad{
+    padding: 15rpx ;
+}
+.me_price{
+    padding: 0 15rpx;
+    font-size: 36rpx;
+    line-height: 36rpx;
+    color: #ff6129;
+}
+.me_noOne{
+    padding: 15rpx;
+    font-size: 24rpx;
+    line-height: 24rpx;
+}

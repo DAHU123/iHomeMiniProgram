@@ -1,0 +1,60 @@
+<view class="me_fixedPos">
+    <view class="me_bgTop">
+        <!--<text>这个是搜索框连带搜索按钮</text>-->
+        <view class="oneCom">
+            <icon type="search" size="15"></icon>
+            <input placeholder="请输入" auto-focus/>
+            <icon type="clear" size="10"></icon>
+        </view>
+        <view class="searchBtn">搜索</view>
+    </view>
+
+    <view class="me_condition">
+        <view>销量</view>
+        <view>
+            <text>价格</text>
+            <image src="../../utils/img/sort.png" class="me_sort"></image>
+
+        </view>
+    </view>
+</view>
+<!--这个地方是用来展示商品列表的-->
+<view class="me_goodsList">
+    <!--直接循环下面这个view就出来了所有的商品-->
+    <view class="me_rect">
+        <image src="../../utils/img/pic3.jpg" class="me_goodsImg"></image>
+        <view class="me_pad">
+            <text class="me_goodsTitle">这个是商品的名称,限制两行,超出以后显示省略号,,,声明声明声明声明声明声明声明声明</text>
+        </view>
+        <text class="me_price">¥45.69</text>
+    </view>
+    <view class="me_rect">
+        <image src="../../utils/img/pic3.jpg" class="me_goodsImg"></image>
+        <view class="me_pad">
+            <text class="me_goodsTitle">这个是商品的名称,限制两行,超出以后显示省略号,,,声明声明声明声明声明声明声明声明</text>
+        </view>
+        <text class="me_price">¥45.69</text>
+    </view>
+    <view class="me_rect">
+        <image src="../../utils/img/pic3.jpg" class="me_goodsImg"></image>
+        <view class="me_pad">
+            <text class="me_goodsTitle">这个是商品的名称,限制两行,超出以后显示省略号,,,声明声明声明声明声明声明声明声明</text>
+        </view>
+        <text class="me_price">¥45.69</text>
+    </view>
+    <view class="me_rect">
+        <image src="../../utils/img/pic3.jpg" class="me_goodsImg"></image>
+        <view class="me_pad">
+            <text class="me_goodsTitle">这个是商品的名称,限制两行,超出以后显示省略号,,,声明声明声明声明声明声明声明声明</text>
+        </view>
+        <text class="me_price">¥45.69</text>
+    </view>
+    <view class="me_rect">
+        <image src="../../utils/img/pic3.jpg" class="me_goodsImg"></image>
+        <view class="me_pad">
+            <text class="me_goodsTitle">这个是商品的名称,限制两行,超出以后显示省略号,,,声明声明声明声明声明声明声明声明</text>
+        </view>
+        <text class="me_price">¥45.69</text>
+    </view>
+
+</view>

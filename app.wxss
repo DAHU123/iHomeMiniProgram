@@ -1,0 +1,53 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+Page {
+    background-color: #f8f8f8;
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix:before,clearfix:after{
+    display: table;
+    content: " ";
+}
+.me_mask{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 2;
+}
+.me_black{
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100rpx;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    font-size: 20rpx;
+    position: fixed;
+    left: 0;
+    top: 120rpx;
+    z-index: 3;
+}
+.me_yiHang{
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.me_yiHang image{
+    width: 24rpx;
+    height: 24rpx;
+    margin-bottom: 10rpx;
+}

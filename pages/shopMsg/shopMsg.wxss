@@ -1,0 +1,385 @@
+/**index.wxss**/
+@import "../../wxParse/wxParse.wxss";
+.containerCar{
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0rpx;
+}
+.me_person{
+    display: flex;
+    flex-flow:row nowrap; 
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f2f2f2;
+    background: #fff;
+    width: 710rpx;
+    height: 80rpx;
+    padding: 0 20rpx;
+    position: fixed;
+    top: 0;
+    z-index: 3001;
+}
+.me_person text{
+    font-size: 30rpx;
+    color: #9a9a9a;
+}
+.me_goBack{
+    width: 15rpx;
+    height: 28rpx;
+    transform:rotateY(180deg);
+}
+.me_threeInfo{
+    width: 34rpx;
+    height: 28rpx;
+}
+.topHandle{
+  height: 60rpx;
+  width: 710rpx;
+  background-color: #f8f8f8;
+}
+.shopLiCar{
+  height: 180rpx;
+  width: 710rpx;
+  padding: 0 20rpx;
+  background-color: white;
+  position: relative;
+  border-bottom: 1px solid #e5e5e5;
+}
+.setShop{
+  width: 710rpx;
+  padding: 0 20rpx;
+  height: 60rpx;
+  background-color: #f8f8f8;
+  margin-top: 80rpx;
+}
+.setShop text{
+   display:block; 
+   height: 60rpx;
+   line-height: 60rpx;
+   text-align: right;
+   font-size: 22rpx;
+   color: #ff6129;
+}
+.shopImg{
+  width: 140rpx;
+  height: 140rpx;
+  float:left;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  background-color: #f8f8f8;
+}
+.shopImg image{
+  width: 140rpx;
+  height: 140rpx;
+}
+.ChoiceCheck{
+  width: 30rpx;
+  height: 140rpx;
+  float: left;
+  margin-top: 20rpx;
+}
+.ChoiceCheck image{
+  width: 30rpx;
+  height: 30rpx;
+  line-height: 140rpx;
+  float: left;
+  margin-top: 55rpx;
+}
+.shopName{
+  width: 100%;
+  max-height: 60rpx;
+  overflow: hidden;
+  float: left;
+  margin-top: 20rpx;
+  font-size: 24rpx;
+}
+.Shopspec{
+  width: 730rpx;
+  height: 30rpx;
+  overflow: hidden;
+  float: left;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  font-size: 20rpx;
+}
+.amount{
+  width: 172rpx;
+  height: 50rpx;
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+}
+.amount input{
+  width: 60rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  float: left;
+  text-align: center;
+  font-size: 20rpx;
+  background-color: #f8f8f8;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+.amount text{
+  width: 50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 24rpx;
+  text-align: center;
+  display: block;
+  background-color: #f8f8f8;
+  padding:0;
+  float: left;
+  border: 1rpx solid #f8f8f8;
+  border-radius: 0;
+  color: #666;
+}
+.bottom{
+  width: 710rpx;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.allCheck{
+  
+  height: 88rpx;
+}
+.allCheck image{
+  width: 30rpx;
+  height: 30rpx;
+}
+.page-body{
+  margin-top: 82rpx;
+  border-bottom: 1px solid #f2f2f2;
+}
+.swiper {
+  height: 700rpx;
+  width: 100%;
+  padding: 0;
+}
+.swiper image {
+  height: 700rpx;
+  width: 100%;
+}
+swiper {
+display:block;
+height:700rpx;
+
+}
+.shopMsgPrice{
+  width: 710rpx;
+  height: 251rpx;
+  padding: 20rpx;
+  background-color: white;
+}
+.shopSuggest{
+  width: 100%;
+  margin-top: 15rpx;
+  float: left;
+  font-size: 22rpx;
+  max-height: 58rpx;
+  color: #ff461C;
+  overflow: hidden;
+}
+.shopPrice{
+  margin-top: 30rpx;
+  font-size: 22rpx;
+  color: #b2b2b2;
+}
+.freight{
+  height: 80rpx;
+  width: 710rpx;
+  padding: 0 20rpx;
+  background-color: white;
+  font-size: 24rpx;
+  line-height: 80rpx;
+  margin-top: 20rpx;
+  border-bottom: 1px solid #f8f8f8;
+}
+.shopSpec{
+  height: 80rpx;
+  width: 710rpx;
+  padding: 0 20rpx;
+  background-color: white;
+  font-size: 24rpx;
+  line-height: 80rpx;
+}
+.shopSpec view{
+  display: inline-block;
+  width: 50%;
+}
+.shopSpec view:nth-child(2){
+  text-align: right;
+}
+.desc{
+  width: 100%;
+
+}
+.bottom{
+  width: 750rpx;
+  height: 88rpx;
+  position: fixed;
+  bottom: 0;
+  z-index: 3001;
+  background-color: white;
+  border-top: 1px solid #e6e6e6;
+}
+.bottom view{
+  display: inline-block;
+  height: 88rpx;
+}
+.bottomRight{
+  width: 250rpx;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 88rpx;
+  color: white;
+  /* float: right; */
+}
+.bottomLeft{
+  width: 125rpx;
+  font-size: 28rpx;
+  text-align: center;
+}
+.specChange{
+  height: 650rpx;
+  width: 710rpx;
+  padding: 0 20rpx;
+  z-index: 3001;
+  position: fixed;
+  left: 0;
+  bottom: 88rpx;
+  background-color: white;
+}
+.ImgPrice{
+  width: 100%;
+  height: 130rpx;
+  
+  position: relative;
+}
+.ImgPrice image{
+  width: 180rpx;
+  height: 180rpx;
+  position: absolute;
+  bottom: 20rpx;
+  left: 20rpx;
+}
+.PriceImg{
+  width: 250rpx;
+  height: 130rpx;
+  position: absolute;
+  bottom: 00rpx;
+  left: 250rpx;
+  color: #fe5c01;
+  font-size: 27rpx;
+  line-height: 130rpx;
+}
+.PriceImg text{
+  font-size: 20rpx;
+  color: #fe5c01;
+}
+.cover{
+  position: fixed;
+  z-index: 3000;
+  top: 0;
+  background-color: black;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+.specSku{
+  width: 100%;
+  border-top: 1rpx solid #e6e6e6;
+}
+.specSku .specTitle{
+  font-size: 24rpx;
+  color: #999999;
+  height: 72rpx;
+  line-height: 72rpx;
+}
+.specSku .skuAttr{
+  display: inline-block;
+  font-size: 24rpx;
+  color: #323232;
+  height: 48rpx;
+  line-height: 48rpx;
+  border-radius: 5rpx;
+  min-width: 80rpx;
+  max-width: 150rpx;
+  padding: 0 15rpx;
+  text-align: center;
+  border: 1rpx solid #cccccc;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+}
+.amountShow{
+  width: 710rpx;
+  height: 80rpx;
+  border-top: 1px solid #e6e6e6;
+  position: fixed;
+  bottom: 88rpx;
+}
+.amountShow .amounts{
+  width: 50%;
+  display: inline-block;
+  float: left;
+  font-size: 24rpx;
+  color: #cccccc;
+  height: 80rpx; 
+  line-height: 80rpx;
+}
+
+/*主容器*/  
+.stepper {  
+    width: 160rpx;  
+    height: 45rpx;  
+    /*给主容器设一个边框*/  
+    border-radius: 3px;  
+    margin-top: 17.5rpx;
+    float: right;
+}  
+  
+/*加号和减号*/  
+.stepper text {  
+    width: 45rpx;  
+    height: 45rpx;
+    line-height: 45rpx;  
+    text-align: center;  
+    float: left;  
+    background-color: #f8f8f8;
+    color: #666666;  
+}  
+  
+/*数值*/  
+.stepper input {  
+    width: 57rpx;  
+    height: 45rpx;  
+    line-height: 45rpx;
+    float: left;  
+    
+    padding: 0;
+    text-align: center;  
+    font-size: 24rpx;  
+    /*给中间的input设置左右边框即可*/  
+    background-color: #f8f8f8;
+    min-height: 0;
+    color: #666666;  
+    margin-left: 1px;
+    margin-right: 1px;
+}  
+  
+/*普通样式*/  
+.stepper .normal{  
+    width: 45rpx;  
+    height: 45rpx;
+    line-height: 45rpx; 
+    color: #666666;  
+    background-color: #f8f8f8;
+}  
+  
+/*禁用样式*/  
+.stepper .disabled{  
+    color: #ccc;  
+}  

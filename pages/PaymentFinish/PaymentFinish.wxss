@@ -1,0 +1,40 @@
+/**personalCenter.wxss**/
+.me_person{
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1rpx solid #f2f2f2;
+    background: #fff;
+    height: 80rpx;
+    padding: 20rpx;
+}
+.me_person text{
+    font-size: 30rpx;
+    color: #9a9a9a;
+}
+.me_goBack{
+    width: 15rpx;
+    height: 28rpx;
+    transform:rotateY(180deg);
+}
+.me_goTo{
+    width: 15rpx;
+    height: 28rpx;
+}
+
+.me_threeInfo{
+    width: 34rpx;
+    height: 28rpx;
+}
+
+.imgage{
+    text-align: center;
+    background-color: white;
+}
+
+.imgage image{
+  width: 200rpx;
+  height: 150rpx;
+  margin-top: 91rpx;
+}

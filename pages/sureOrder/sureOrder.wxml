@@ -1,0 +1,90 @@
+<view class="me_address" bindtap='address'>
+    <view>
+        <view class="me_first">
+            <text>{{userNickName}}</text>
+            <text>{{userPhone}}</text>
+        </view>
+        <view class="me_left">
+            <image src="{{infoAdd}}" class="me_infoAdd"></image>
+            <text>地址:{{address}}</text>
+        </view>
+    </view>
+    <image src="{{goTo}}" class="me_goTo"></image>
+</view>
+<view class="me_clrView"><image src="{{colorBrd}}" class="me_colorBrd"></image></view>
+<view class="me_express me_fontSize">
+    <text>商品清单</text>
+    <text>共5件</text>
+</view>
+
+<view class="me_goodsList">
+    <view class="me_inner_goods">
+        <image src="{{userLogo}}" class="me_goodsImg"></image>
+        <view class="me_view_column">
+            <view class="me_goodsName">袖大领口低领秋衣t恤超薄打底内衣紧打底内衣紧打底内衣紧打底内衣紧身女T恤上衣 </view>
+            <text class="me_sku">规格一：XXX；规格二：XXX </text>
+            <view class="me_price">
+                <text>￥29999.12</text>
+                <text>×2</text>
+            </view>
+        </view>
+    </view>
+    <view class="me_inner_goods">
+        <image src="{{userLogo}}" class="me_goodsImg"></image>
+        <view class="me_view_column">
+            <view class="me_goodsName">袖大领口低领秋衣t恤超薄打底内衣紧打底内衣紧打底内衣紧打底内衣紧身女T恤上衣 </view>
+            <text class="me_sku">规格一：XXX；规格二：XXX </text>
+            <view class="me_price">
+                <text>￥29999.12</text>
+                <text>×2</text>
+            </view>
+        </view>
+    </view>
+    <view class="me_inner_goods">
+        <image src="{{userLogo}}" class="me_goodsImg"></image>
+        <view class="me_view_column">
+            <view class="me_goodsName">袖大领口低领秋衣t恤超薄打底内衣紧打底内衣紧打底内衣紧打底内衣紧身女T恤上衣 </view>
+            <text class="me_sku">规格一：XXX；规格二：XXX </text>
+            <view class="me_price">
+                <text>￥29999.12</text>
+                <text>×2</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="me_express me_fontSize">
+    <text>商品计价</text>
+    <text style="color: #ff612a;">￥9898989.36</text>
+</view>
+<view class="me_hang">
+    <view class="me_inner_view me_height">
+        <text>运费</text>
+        <text style="color: #999;">+12.00</text>
+    </view>
+</view>
+<view class="me_hang me_last">
+    <view class="me_inner_view me_height">
+        <text>优惠</text>
+        <text style="color: #999;">-0.00</text>
+    </view>
+</view>
+<view class="me_hang me_last">
+    <view class="me_inner_view me_height">
+        <text>支付方式</text>
+        <text style="color: #323232;">在线付款</text>
+    </view>
+</view>
+<view class="me_hang me_last me_bottom">
+    <view class="me_inner_view me_height me_other">
+        <text>备注</text>
+        <input type="text" placeholder-style="color:#b2b2b2;" placeholder="点此输入备注信息"/>
+        <!--<text style="color: #323232;">多发一个,与商家已协商一致</text>-->
+    </view>
+</view>
+<view class="me_btmBtn">
+    <view class="me_setFont">
+        <text>实付款：</text>
+        <text>¥ 22299.00</text>
+    </view>
+    <view class='submit' bindtap="showData">提交订单</view>
+</view>
